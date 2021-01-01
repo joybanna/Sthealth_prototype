@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnermyMovePosition : MonoBehaviour
 {
     public List<Transform> movePositions;
     public float moveSpeed = 1;
+    public Transform eyeEnemy;
+    public float enemyStopTime = 0.1f;
+    public float enemyRotate = 0.5f;
+    private int currentPoint = 0;
     private void Start()
     {
         StartCoroutine(Move());
@@ -13,22 +18,22 @@ public class EnermyMovePosition : MonoBehaviour
     IEnumerator Move()
     {
         bool isMoving = false;
+
         while (!isMoving)
         {
-            for (int i = 0; i < movePositions.Count; i++)
+            for (int i = currentPoint; i < movePositions.Count; currentPoint++)
             {
-                Vector3 oldPos = this.transform.position;
-                transform.LookAt(LokAtPosition(movePositions[i].position));
-                while (MoveToNextNode(movePositions[i].position))
+                RotationEnemy(LokAtPosition(movePositions[currentPoint].position));
+                while (MoveToNextNode(movePositions[currentPoint].position))
                 {
                     isMoving = true;
                     yield return null;
                 }
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(enemyStopTime);
                 isMoving = false;
-                if (i == movePositions.Count - 1)
+                if (currentPoint == movePositions.Count - 1)
                 {
-                    i = 0;
+                    currentPoint = 0;
                 }
             }
         }
@@ -41,4 +46,13 @@ public class EnermyMovePosition : MonoBehaviour
     {
         return new Vector3(_pos.x, this.transform.position.y, _pos.z);
     }
+
+    private void RotationEnemy(Vector3 _nextPos)
+    {
+        eyeEnemy.LookAt(_nextPos);
+        Quaternion eyeRotate = eyeEnemy.rotation;
+        Vector3 angleEuler = eyeRotate.eulerAngles;
+        LeanTween.rotate(this.gameObject, angleEuler, enemyRotate);
+    }
+
 }
