@@ -8,6 +8,7 @@ public class EnemyRotation : MonoBehaviour
     public float rotationMax = 100f;
     public float enemyRotateSpeed = 3f;
     public float enemyStopTime = 0.5f;
+    public float offsetRotate;
     private Vector3 temp;
     private Vector3 minR;
     private Vector3 maxR;
@@ -16,8 +17,7 @@ public class EnemyRotation : MonoBehaviour
     private List<Vector3> vecterlist;
     private void Start()
     {
-
-        temp = new Vector3(0, this.transform.rotation.y, 0);
+        temp = new Vector3(0, this.transform.rotation.y + offsetRotate, 0);
         minR = new Vector3(0, this.transform.rotation.y + rotationMin, 0);
         maxR = new Vector3(0, this.transform.rotation.y + rotationMax, 0);
         CreateVectorList();

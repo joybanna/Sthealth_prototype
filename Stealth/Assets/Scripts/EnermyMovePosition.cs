@@ -24,7 +24,7 @@ public class EnermyMovePosition : MonoBehaviour
             for (int i = currentPoint; i < movePositions.Count; currentPoint++)
             {
                 RotationEnemy(LokAtPosition(movePositions[currentPoint].position));
-                while (MoveToNextNode(movePositions[currentPoint].position))
+                while (MoveToNextNode(LokAtPosition(movePositions[currentPoint].position)))
                 {
                     isMoving = true;
                     yield return null;
