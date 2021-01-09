@@ -17,12 +17,13 @@ public class FieldOfView : MonoBehaviour
     public float edgeDstThreshold;
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
+    public GameObject hitt;
     private void Start()
     {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-        StartCoroutine(FindTargetWithDelay(0.2f));
+        StartCoroutine(FindTargetWithDelay(0.5f));
     }
     private void Update()
     {
@@ -105,7 +106,9 @@ public class FieldOfView : MonoBehaviour
                 float dstToTarget = Vector3.Distance(transform.position, target.position);
                 if (!Physics.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
                 {
-                    visibleTargets.Add(target);
+                    Debug.Log("Player" + target.gameObject.name);
+                    target.GetComponent<PlayerController>().GameOver();
+                    //visibleTargets.Add(target);
                 }
             }
         }
