@@ -11,6 +11,7 @@ public class EnermyMovePosition : MonoBehaviour
     public float enemyStopTime = 0.1f;
     public float enemyRotate = 0.5f;
     private int currentPoint = 0;
+    public float adaptiveSpeed = 1;
     private void Start()
     {
         StartCoroutine(Move());
@@ -40,7 +41,7 @@ public class EnermyMovePosition : MonoBehaviour
     }
     private bool MoveToNextNode(Vector3 _goal)
     {
-        return _goal != (transform.position = Vector3.MoveTowards(transform.position, _goal, moveSpeed * Time.fixedDeltaTime));
+        return _goal != (transform.position = Vector3.MoveTowards(transform.position, _goal, moveSpeed * adaptiveSpeed * Time.fixedDeltaTime));
     }
     private Vector3 LokAtPosition(Vector3 _pos)
     {

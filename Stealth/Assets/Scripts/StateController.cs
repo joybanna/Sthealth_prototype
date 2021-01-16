@@ -22,10 +22,10 @@ public class StateController : MonoBehaviour
             home_btn[i].onClick.AddListener(() => OnclickHome());
         }
 
-        for (int i = 1; i < stategame.Length; i++)
+        /*for (int i = 1; i < stategame.Length; i++)
         {
             stategame[i].SetActive(false);
-        }
+        }*/
     }
     public void SetState(int _state, bool _isOpen, float _time)
     {

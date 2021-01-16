@@ -589,10 +589,11 @@ MonoBehaviour:
   - {fileID: 705242105}
   - {fileID: 656138119}
   - {fileID: 1028301723}
-  moveSpeed: 3
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 1096366400}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &28033689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,10 +1138,11 @@ MonoBehaviour:
   - {fileID: 1198671478}
   - {fileID: 1885675762}
   - {fileID: 2085660598}
-  moveSpeed: 4
+  moveSpeed: 1.7
   eyeEnemy: {fileID: 895353348}
   enemyStopTime: 0.5
   enemyRotate: 0.7
+  adaptiveSpeed: 1.5
 --- !u!1 &52720346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,10 +1893,11 @@ MonoBehaviour:
   - {fileID: 752610243}
   - {fileID: 1935483111}
   - {fileID: 1571368775}
-  moveSpeed: 3
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 524310097}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &86200851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,7 +2850,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4713,10 +4716,11 @@ MonoBehaviour:
   - {fileID: 432393539}
   - {fileID: 1626564031}
   - {fileID: 782783704}
-  moveSpeed: 2
+  moveSpeed: 1
   eyeEnemy: {fileID: 1900933386}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &192831249
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,10 +7079,11 @@ MonoBehaviour:
   - {fileID: 260242873}
   - {fileID: 1803349486}
   - {fileID: 260242873}
-  moveSpeed: 3
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 974087574}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &277638018
 GameObject:
   m_ObjectHideFlags: 0
@@ -9663,7 +9668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: 150
   rotationMax: -160
-  enemyRotateSpeed: 2
+  enemyRotateSpeed: 1
   enemyStopTime: 1
   offsetRotate: 0
 --- !u!1 &401699796
@@ -10403,7 +10408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: 200
   rotationMax: -200
-  enemyRotateSpeed: 3
+  enemyRotateSpeed: 1.7
   enemyStopTime: 0.5
   offsetRotate: 0
 --- !u!1 &435173475
@@ -18748,10 +18753,11 @@ MonoBehaviour:
   - {fileID: 1451591413}
   - {fileID: 770354530}
   - {fileID: 192937920}
-  moveSpeed: 3.5
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 1654350514}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &739428922
 GameObject:
   m_ObjectHideFlags: 0
@@ -19208,10 +19214,11 @@ MonoBehaviour:
   - {fileID: 52720347}
   - {fileID: 1215290009}
   - {fileID: 52720347}
-  moveSpeed: 3
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 1662776177}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &769915479
 GameObject:
   m_ObjectHideFlags: 0
@@ -20634,10 +20641,11 @@ MonoBehaviour:
   - {fileID: 1227499206}
   - {fileID: 401699797}
   - {fileID: 385742530}
-  moveSpeed: 4
+  moveSpeed: 2
   eyeEnemy: {fileID: 1359106769}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &819679959
 GameObject:
   m_ObjectHideFlags: 0
@@ -26951,7 +26959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 29.6, y: -34.6}
+  m_AnchoredPosition: {x: 29.599976, y: -34.600006}
   m_SizeDelta: {x: 49.413498, y: 49.413498}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1065951856
@@ -28207,7 +28215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: -130
   rotationMax: -300
-  enemyRotateSpeed: 3
+  enemyRotateSpeed: 1.5
   enemyStopTime: 1
   offsetRotate: -180
 --- !u!1 &1116281696
@@ -29384,7 +29392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: 150
   rotationMax: -40
-  enemyRotateSpeed: 4
+  enemyRotateSpeed: 2
   enemyStopTime: 1
   offsetRotate: 250
 --- !u!1 &1186195789
@@ -29526,7 +29534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: -160
   rotationMax: 140
-  enemyRotateSpeed: 3
+  enemyRotateSpeed: 1.5
   enemyStopTime: 1
   offsetRotate: 0
 --- !u!1 &1189348103
@@ -30479,10 +30487,11 @@ MonoBehaviour:
   - {fileID: 613119888}
   - {fileID: 229184979}
   - {fileID: 342035712}
-  moveSpeed: 3
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 422789199}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &1246994228
 GameObject:
   m_ObjectHideFlags: 0
@@ -32974,7 +32983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: -150
   rotationMax: 150
-  enemyRotateSpeed: 4
+  enemyRotateSpeed: 2
   enemyStopTime: 1
   offsetRotate: -90
 --- !u!1 &1370863510
@@ -35255,10 +35264,11 @@ MonoBehaviour:
   - {fileID: 311176834}
   - {fileID: 371546549}
   - {fileID: 798476143}
-  moveSpeed: 2
+  moveSpeed: 1
   eyeEnemy: {fileID: 1711757195}
   enemyStopTime: 1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &1464192195
 GameObject:
   m_ObjectHideFlags: 0
@@ -35556,7 +35566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476832286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 1, z: 10}
+  m_LocalPosition: {x: -40.4, y: 1, z: 205.81}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41909,7 +41919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: 180
   rotationMax: -207
-  enemyRotateSpeed: 2
+  enemyRotateSpeed: 1
   enemyStopTime: 1.5
   offsetRotate: 0
 --- !u!1 &1528406955
@@ -43463,10 +43473,11 @@ MonoBehaviour:
   - {fileID: 770354530}
   - {fileID: 192937920}
   - {fileID: 1064740845}
-  moveSpeed: 3.5
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 662681951}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &1602388245
 GameObject:
   m_ObjectHideFlags: 0
@@ -43736,7 +43747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: -200
   rotationMax: 200
-  enemyRotateSpeed: 5
+  enemyRotateSpeed: 2
   enemyStopTime: 1
   offsetRotate: 0
 --- !u!1 &1619137494
@@ -45100,10 +45111,11 @@ MonoBehaviour:
   - {fileID: 1006247507}
   - {fileID: 447249467}
   - {fileID: 1028700999}
-  moveSpeed: 3
+  moveSpeed: 1.5
   eyeEnemy: {fileID: 1871064544}
   enemyStopTime: 0.1
   enemyRotate: 0.5
+  adaptiveSpeed: 1.5
 --- !u!1 &1666718495
 GameObject:
   m_ObjectHideFlags: 0
